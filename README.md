@@ -8,5 +8,3 @@ This is a plain webkit that has security configured only.
 
 ### GrumPHP:Purpose
 <p>GrumPHP ensures that all checks and tests pass before a developer can commit code. If the checks succeed, the developer is allowed to push to the repository. Otherwise, the push is blocked to maintain code quality</p>
-
-#### Testing ni
