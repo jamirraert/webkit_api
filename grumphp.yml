@@ -1,0 +1,30 @@
+# grumphp.yml
+grumphp:
+    hooks_dir: ~
+    hooks_preset: local
+    stop_on_failure: false
+
+    tasks: 
+        phpstan:
+            level: 5
+            configuration: phpstan.neon
+            memory_limit: "-1"
+
+        phpunit:
+            config_file: phpunit.xml
+            testsuite: Unit
+            group: []
+
+    ignore_unstaged_changes: false
+    hide_circumvention_tip: true #{false show the tip `--no-verify`}
+    process_timeout: 120
+    additional_info: ~
+    #ascii:
+    #    failed: resource/grumphp-grumpy.txt
+    #    succeeded: resource/grumphp-happy.txt
+    parallel:
+        enabled: true
+        max_workers: 32
+    fixer:
+        enabled: true
+        fix_by_default: false
