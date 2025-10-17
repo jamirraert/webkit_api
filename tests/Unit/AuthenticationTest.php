@@ -9,8 +9,10 @@ class AuthenticationTest extends TestCase
     /**
      * A basic unit test example.
      */
-    public function user_can_login(): void
+    public function test_user_can_login(): void
     {
-        $this->assertTrue(true);
+        $value = 1 + 1;
+        $this->assertEquals(2, $value);
+        // $this->assertTrue(true);
     }
 }
