@@ -1,3 +1,6 @@
+
+includes:
+    - vendor/nunomaduro/larastan/extension.neon
 parameters:
   level: 5
   paths:
@@ -14,3 +17,8 @@ parameters:
     - node_modules/**
 
   checkMissingCallableSignature: false
+
+  ignoreErrors:
+    # Ignore Laravel magic false positives
+    - '#Call to an undefined static method App\\Models\\.*#'
+    - '#Access to an undefined property App\\Models\\.*#'
